@@ -1,0 +1,63 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* UTILITY CLASSES */
+
+
+/* VARAIBLEs */
+:root{
+ --BGCOLOR:black;
+ --FONTCOLOR:WHITE;
+}
+
+/* GENERAL STYLES */
+
+
+.container{
+    background-color:var(--BGCOLOR) ;
+    width: 60%;
+    height: auto;
+    margin: 50px auto;
+    padding: 25px;
+    border: 5px solid white;
+    border-radius: 30px;
+}
+
+:where(.container-image1,.container-image2){
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    flex-wrap: wrap;
+
+
+}
+
+:where(.container-image1 img,.container-image2 img){
+    width: 140px;
+    height: 240px;
+    border: 5px solid white;
+    border-radius: 20px;
+
+}
+.container__title{
+    text-align: center;
+    color: var(--FONTCOLOR);
+    
+    
+    
+}
+.container__border{
+    border-bottom: 5px solid white;
+    padding: 10px;
+    width: 65%;
+
+}
+.main2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
